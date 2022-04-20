@@ -1,0 +1,57 @@
+(defwidget outer-window []
+    (box))
+(defwidget line []
+    (box))
+(defwidget profile []
+    (box :orientation "h"
+         :space-evenly "true"
+
+        (box :class "pfp")
+        (box :class "text" :orientation "v"
+             :space-evenly "true"
+
+            (box :class "welcome" "welcome!")
+            (box :class "username" "Sir Bleyom")
+        )
+    )
+)
+(defwidget music-player []
+    (box :class "music-player"
+         :orientation "h"
+        (box :class "song-art" :style "background-image: url('${art}')" :tooltip "${song_artist} - ${song_title_full}" song_art)
+        (box :class "song-info" :orientation "v"
+            (label :class "song-title" :text song_title)
+            (box :class "song-artist" song_artist)
+            (box :class "song-controls" :orientation "h"
+                (button :onclick "playerctl previous" "")
+                (button :class "play-pause" :onclick "playerctl play-pause" "")
+                (button :onclick "playerctl next" "")
+            )
+        )
+    )
+)
+
+(defwindow outer-window
+:geometry (geometry :x "1%"
+                    :y "55px"
+                    :width "350px"
+                    :height "325px")
+    (outer-window))
+(defwindow profile
+    :geometry (geometry :x "2%"
+                        :y "240px"
+                        :width "320px"
+                        :height "120px")
+    (profile))
+(defwindow line
+    :geometry (geometry :x "1%"
+                        :y "33%"
+                        :width "310px"
+                        :height "2px")
+    (line))
+(defwindow music-player
+    :geometry (geometry :x "2%"
+                        :y "10%"
+                        :width "320px"
+                        :height "130px")
+    (music-player))

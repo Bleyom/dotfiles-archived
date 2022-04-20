@@ -1,0 +1,101 @@
+// Variables
+$bg: #0B0F10;
+$bgSecondary: #0B0F10;
+$bgSecondaryAlt: #0B0F10;
+$fg: #c5c8c9;
+$blue: #84a0c6;
+$blue-desaturated: rgb(117, 140, 176);
+$magenta: #bb8fe5;
+$green: #8dc776;
+$accent: $blue;
+
+* {
+    all: unset;
+}
+
+window {
+    color: $fg;
+    font-family: "VictorMono Nerd Font";
+}
+
+button:hover {
+    color: $accent;
+}
+
+// Custom classes
+.outer-window {
+    background-color: $bgSecondary;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.profile, .music-player {
+    border-radius: 10px;
+}
+
+// Profile
+.profile {
+    /* background-color: $bgSecondaryAlt; */
+
+    .pfp {
+        background-image: url("./assets/avatar.png");
+        background-size: 100%;
+        border-radius: 40px;
+
+        margin: 20px 35px 20px 40px;
+    }
+
+    .text {
+        margin: 20px -20px;
+        margin-left: -65px;
+
+        .welcome, .username {
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        .username {
+            font-size: 24px;
+            color: $blue-desaturated;
+        }    
+    }
+}
+
+// Music Player
+.music-player {
+    background-color: $bgSecondaryAlt;
+    padding: 10px 0px 20px 0px;
+
+    .song-art {
+        background-size: 85px;
+        border-radius: 6px;
+    
+        margin: 15px 40px 0px 35px;
+    }
+    
+    .song-info {
+        font-size: 16px;
+        font-weight: bold;
+
+        margin: 20px 20px 0px -35px;
+    
+        .song-title {
+            color: $magenta;
+            font-size: 14px;
+        }
+
+        .song-artist {
+            margin-top: -20px;
+
+            color: $green;
+            font-size: 12px;
+        }
+        
+        .song-controls button {
+            font-family: "Material Icons";    
+            font-size: 18px;    
+            margin-top: -10px;
+            margin-left: -5px;
+        }
+    }
+}

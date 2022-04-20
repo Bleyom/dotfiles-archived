@@ -1,0 +1,8 @@
+#!/bin/bash
+
+file=layout
+
+bsp-layout cycle > $file
+content=$(cat $file | sed 's/:/\n/g' | sed '2,5d')
+
+notify-send "BSP Layout" "$content"
