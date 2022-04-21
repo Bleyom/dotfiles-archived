@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# define app PID
+PID="6000"
+
+# get the brightness using the light utility and remove decimal values
+BRIGHTNESS=$(light -G | cut -d '.' -f 1)
+
+# show it in a notification using dunstify
+dunstify -r $PID -i /home/bleyom/.config/dunst/icons/clouds.png -t 1000 -h int:value:$BRIGHTNESS -h string:synchronous:brightness-boi "Bright boi" "Brightness: $BRIGHTNESS"
+
+
+# define function to increase brightness using brihgtnessctl utility
+function increase_brightness() {
+    # increase brightness by 10%
+    brightnessctl set +10%
+}
+
+function decrese_brightness() {
+    # decrease brightness by 10%
+    brightnessctl set 10%-
+}
+
+# use the increase_brightnes and decrese_brightness functions when the first argument is up or down
+case $1 in
+    up)
+        increase_brightness
+        ;;
+    down)
+        decrese_brightness
+        ;;
+esac
