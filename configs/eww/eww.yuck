@@ -30,6 +30,19 @@
         )
     )
 )
+;; MUSIC PLAYER VARS
+(defpoll art :interval "5s"
+    "./scripts/echoSongArt")
+(defpoll song_art :interval "5s"
+    "./scripts/getSongArt")
+(defpoll song_artist :interval "2s"
+    "./scripts/getSongArtist")
+(defpoll song_title :interval "2s"
+    "./scripts/getSongTitle")
+(defpoll song_title_full :interval "2s"
+    "./scripts/getSongTitle full")
+(defpoll player_status :interval "1s"
+    "./scripts/getPlayerStatus")
 
 (defwindow outer-window
 :geometry (geometry :x "1%"
