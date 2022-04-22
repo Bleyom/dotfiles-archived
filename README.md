@@ -11,12 +11,12 @@
   - [Spanish 🇪🇸]()
   
   
-  1. [Info ℹ️]()
-  2. [How to ❓]()
-     * [Manual Installation 🤙]()
-     * [Auto Installer 🚗]()
-  3. [Keybindings ⌨️]()
-  4. [Showcase 📷]()
+  1. [Info ℹ️](#info)
+  2. [How to ❓](#howto)
+     * [Manual Installation 🤙](#manual)
+     * [Auto Installer 🚗](#auto)
+  3. [Keybindings ⌨️](keys)
+  4. [Showcase 📷](showcase)
 
 
 <br>
@@ -72,6 +72,7 @@
   <br>
   
  <strong>ESSENTIAL KEYBINDINGS</strong>
+ <a name="keys"></a>
   | Key         | Action      |
   | ----------- | ----------- |
   | super + Return | Open Terminal      |
@@ -86,7 +87,9 @@
 <br>
 <br>
 
+
 <strong>SHOWCASE</strong>
+<a name="showcase"></a>
 <br>
 ![main_showcase](https://i.imgur.com/ctbMQCb.png)
 <br>
