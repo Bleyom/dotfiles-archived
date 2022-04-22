@@ -22,6 +22,7 @@
 <br>
 <br>
 
+<a name="info"></a>
 <details>
   <summary><strong>INFO</strong></summary>
     
@@ -39,10 +40,12 @@
 <br>
 <br>
 
+<a name="howto"></a>
 <details>
   <summary><strong>HOW TO</strong></summary>
   <details>
     <summary><strong>Manual Installation</strong></summary>
+    <a name="manual"></a>
   
       1. DEPENDENCIES AND UTILIES
       * paru -S kitty polybar bspwm sxhkd rofi nitrogen feh brightnessctl light nerd-fonts-complete picom-jonaburg-git bsp-layout python3 python-dbus
@@ -59,8 +62,8 @@
    </details>
       <details>
         <summary><strong>Auto Installer</strong></summary>
-
-  1. Working in that ⚗️
+        <a name="auto"></a>
+      1. Working in that ⚗️
 </details>
 
   </details>
