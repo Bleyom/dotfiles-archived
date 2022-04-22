@@ -3,13 +3,12 @@
 ![main_showcase](https://i.imgur.com/ctbMQCb.png)
 
 ## Table of Contents
-
-  ## Contents
   
   ### Lang 
   - [English 🇬🇧]()
   - [Spanish 🇪🇸]()
   
+    ## Contents
   
   1. [Info ℹ️](#info)
   2. [How to ❓](#howto)
