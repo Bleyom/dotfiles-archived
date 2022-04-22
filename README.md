@@ -47,17 +47,19 @@
     <a name="manual"></a>
   
       1. DEPENDENCIES AND UTILIES
-      * paru -S kitty polybar bspwm sxhkd rofi nitrogen feh brightnessctl light nerd-fonts-complete picom-jonaburg-git bsp-layout python3 python-dbus
+      paru -S kitty polybar bspwm sxhkd rofi nitrogen feh brightnessctl light nerd-fonts-complete picom-jonaburg-git bsp-layout python3 python-dbus
     
       2. COPY CONFIG
-      * CLONE REPOSITORIE: git clone https://github.com/Bleyom/dotfiles
-      * ENTER TO DIRECTORY: cd dotfiles
-      * CREATE DIRECTORIES IF DOESN'T EXIST: mkdir -p $HOME/.local/bin/
-      * COPY THE SCRIPTS AND BINARIES TO DIRECTORIE: cp ./bin/* ~/.local/bin/
-      * GIVE EXECUTION PERMISSIONS TO SCRIPTS/BINARIES: chmod +x ./$HOME/.local/bin/*
-      * COPY THE CONFIG: cp -r ./configs/* ~/.config/
-      * GIVE EXECUTION PERMISSIONS TO SOME FILES: chmod +x ~/.config/polybar/launch.sh
-      * chmod +x ~/.config/bspwm/bspwmrc
+       CLONE REPOSITORIE: git clone https://github.com/Bleyom/dotfiles
+       ENTER TO DIRECTORY: cd dotfiles
+       CREATE DIRECTORIES IF DOESN'T EXIST: mkdir -p $HOME/.local/bin/
+       COPY THE SCRIPTS AND BINARIES TO DIRECTORIE: cp ./bin/* ~/.local/bin/
+       GIVE EXECUTION PERMISSIONS TO SCRIPTS/BINARIES: chmod +x ./$HOME/.local/bin/*
+       COPY THE CONFIG: cp -r ./configs/* ~/.config/
+       GIVE EXECUTION PERMISSIONS TO SOME FILES: 
+       chmod +x ~/.config/polybar/launch.sh
+       chmod +x ~/.config/bspwm/bspwmrc
+       chmod +x ~/.config/polybar/scripts/*
    </details>
       <details>
         <summary><strong>Auto Installer</strong></summary>
